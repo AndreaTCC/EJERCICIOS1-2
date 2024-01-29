@@ -1,2 +1,3 @@
-# EJERCICIOS1-2
-EJERCICIOS JAVASCRIPT
+# ejercicioGIT
+ANDREA TATIANA CEVALLOS CEVALLOS 
+andrea.cevallosc@unl.edu.ec

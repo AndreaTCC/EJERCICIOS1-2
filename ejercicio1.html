@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO</title>
+</head>
+<body>
+    <div style="color: rgb(47, 46, 46); background-color: antiquewhite;">
+        <h2>SERIE FIBONACCI</h2>
+    </div>
+    <script>
+        var numeroDeElementos;
+        numeroDeElementos = parseInt(prompt("INGRESAR NÚMERO DE ELEMENTOS SERIE:"));
+    function fibonacci(numeroDeElementos) {
+        var num1 = 0;
+        var num2 = 1;
+        var fib = [num1, num2];
+        for (var i = 2; i < numeroDeElementos; i++) {
+            var num3 = num1 + num2;
+            fib.push(num3);
+            num1 = num2;
+            num2 = num3;
+        }
+
+        return fib;
+    }
+
+    document.write(fibonacci(numeroDeElementos));
+    
+    </script>
+</body>
+
+
+

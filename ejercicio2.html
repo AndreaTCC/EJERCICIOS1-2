@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 2</title>
+</head>
+<body>
+    <div style="color: rgb(47, 46, 46); background-color: burlywood;">
+        <h2>ORDENAR ARREGLO DE MAYOR A MENOR</h2>
+    </div>
+    <div style="color: rgb(47, 46, 46); background-color: lightcoral">
+        <script>
+            // ARREGLO datos ES EL ARREGLO QUE CONTIENE CUALQUIER TIPO DE DATO ANTES DE ORDENAR
+            let datos=["unacadena",3,9,1,10,500,1,10,true];
+            // ARREGLO filtroNumeros ES EL ARREGLO QUE CONTIENE SOLO LOS NÚMEROS
+            let filtroNumeros = [];
+
+            document.write("LOS DATOS DEL ARREGLO SON: ");
+            document.write(datos);
+
+        function soloNumeros(array){
+        
+        for (var i = 0; i < array.length; i++) {
+            if (typeof(array[i])=="number") { 
+            filtroNumeros.push(array[i]);
+            }
+        }
+        return filtroNumeros;
+        }  
+        console.log(soloNumeros(datos));
+    
+        function ordenarNumeros(numeros) {
+            for (let i = 0; i < numeros.length-1; i++) {
+                for (let j = 0; j < numeros.length-i-1; j++) {
+                    if (numeros[j]<numeros[j+1]) {
+                        [numeros[j],numeros[j+1]]=[numeros[j+1],numeros[j]];
+                    }   
+                }
+            }   
+        }    
+        ordenarNumeros(filtroNumeros);
+        document.write(" ---->  EL ARREGLO ORDENADO DE MAYOR A MENOR ES: ");
+        document.write(filtroNumeros);
+        </script>
+
+    </div>
+    
+</body>
+
+
+
